@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Code</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<br>
+
+<!--Form Input Area-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="product-name">Product Name</label>                                        <!--Label for product name-->
+                        <input type="text" class="form-control" id="product-name" placeholder="Product Name"> <!--Text area input for product name-->
+                    </div>
+                </div> 
+            </div> 
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="product#">Product Number</label>                                   <!--Label for product number-->
+                        <input type="text" class="form-control" id="product#" placeholder="0000-0000"> <!--Text area numerical input for product number-->
+                    </div>
+                </div> 
+            </div> 
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="cogs">Cost of Goods Sold (COGS)</label>
+                    <input type="text" class="form-control" id="cogs" placeholder="0.00" aria-label="Amount (to the nearest dollar)"> <!--Text area numerical input for cogs-->
+                </div> 
+                <div class="col-sm">
+                    <label for="sales">Sales</label>
+                    <input type="text" class="form-control" id="sales" placeholder="0.00" aria-label="Amount (to the nearest dollar)"> <!--Text area numerical input for sales-->
+                </div> 
+            </div> 
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="customer-rate">Customer Rating</label>
+                    <select class="custom-select my-1 mr-sm-2" id="customer-rate">  <!--Creates the drop down selections-->
+                        <option selected>Choose</option>
+                        <option value="1">1 (Very Bad)</option>
+                        <option value="2">2 (Bad)</option>
+                        <option value="3">3 (Average)</option>
+                        <option value="4">4 (Good)</option>
+                        <option value="5">5 (Very Good)</option>
+                    </select>
+                </div>
+            </div>
+        </div> 
+        <div>
+            <button id="submit" class="btn btn-primary form-control" style="width: 100px; height: 50px;">Submit</button> <!--Creates the submit button-->
+        </div> 
+        <br>
+    </div> 
+<br>
+
+<!--Table Output Area-->
+    <table id="table" class="table table-light table-bordered">
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Total Profit</th>
+            <th>Rating</th>
+        </tr>
+    </table>
+
+
+<!--Script Sources-->
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
